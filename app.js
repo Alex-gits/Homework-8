@@ -146,10 +146,6 @@ let getElementHeight2 = function () {
 
 
 
-
-
-
-
 // -----------------------------------------------------------------------------------------------------------------
 
 
@@ -167,16 +163,14 @@ let getElementHeight2 = function () {
 // sum(); // 0
 
 const sum = (...items) => {
-    const params = Array.prototype.slice.call(items);
 
-    if (!params.length) return 0;
+    if (!items.length) return 0;
 
-    return params.reduce((prev, next) => prev + next);
+    return items.reduce((prev, next) => prev + next);
 }
 
 // console.log(sum(1, 2, 3, 4));
 // console.log(sum());
-
 
 
 
